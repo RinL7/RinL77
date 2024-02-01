@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+   
+    <div class="container mx-auto">
+       
+        <h1 class="text-2xl" id="init">Hey RinL👋, Can I Ask You Something?</h1>
+        <img id="anh1" style="height: 300px; width: 350px;" src="https://i.pinimg.com/originals/45/85/34/458534c26985199f317c4839a689a3d8.gif" >
+        <img id="anh2" style="display: none;margin: 150px;;" src="	https://i.pinimg.com/originals/49/f7/9c/49f79c18d52d885b3eca73c28ad3c11a.gif" >
+        <button style="margin-left: 100px;margin-right: 100px;" onclick="startQuestions()" id="que">Sure, Ask Away!</button>
+
+        <div id="questions" style="display: none; ">
+            <h1 class="text-2xl mt-8">Question:</h1>
+            <p>Do you wanna go out with me?</p>
+            <div id="wrapper">
+                <button style="margin-right: 19px;margin-left: -72px;" onclick="answerYes()">Yes</button>
+                <button style="position: absolute;" id="animatedButton"  onmouseover="answerNo()" class="no">No</button>
+            </div>
+        </div>
+
+        <div id="message" style="display: none;">
+           
+            <p id="messageText"></p>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas">
+   </canvas>
+
+
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
